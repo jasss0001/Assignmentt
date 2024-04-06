@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-areas:
+                "header header"
+                "aside section"
+                "footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            grid-area: section;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 1em;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .content {
+            overflow: hidden;
+            /* Clear the float */
+        }
+
+        .float-left {
+            float: left;
+            /* Float the image to the left */
+            margin-right: 20px;
+            /* Add some margin to separate the image from the text */
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our gun's website</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="Other.html">Other</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h3>Sidebar</h3>
+        <h4>To learn more</h4>
+        <div class="sidebar">
+        <ul>
+            <li><a href="#"><img src="45.jpeg" height="50px" width="50px"> 45 bore</a></li>
+            <li><a href="#"><img src="glock.jpeg" height="50px" width="50px">glock</a></li>
+            <li><a href="#"><img src="sniper.jpeg" height="50px" width="50px">Sniper</a></li>
+            <li><a href="#"><img src="shotgun.jpeg" height="50px" width="50px">shotgun</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section>
+        <h2>The Grand Guns</h2>
+        <div id="content">
+            <img src="rifle.jpeg"
+                height="200px" width="200px" class="float-left">
+        </div>
+        <p>Purpose and Design: Pistols are designed for close-range self-defense and law enforcement,
+             known for their compact size and easy concealability. Guns, including rifles and shotguns,
+              are versatile firearms designed for hunting, sport shooting, and home defense, 
+              each tailored to different scenarios and distances.
+
+            Performance and Versatility: Pistols offer quick access and maneuverability, 
+             making them effective in close-quarters combat. Rifles are prized for their
+             accuracy and range, making them ideal for long-distance shooting and hunting.
+              Shotguns excel in stopping power and are effective in hunting and home defense,
+               especially at short ranges.
+            
+            Safety and Responsibility: Both pistols and guns require responsible handling,
+             proper training, and adherence to firearm safety practices. Understanding the
+              unique characteristics and operation of each firearm type is essential for safe 
+              and effective use.
+            
+            
+            
+            
+            
+            </p>
+    </section>
+    
+    <footer>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

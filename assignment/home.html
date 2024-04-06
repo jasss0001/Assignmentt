@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            grid-template-areas:
+                "header header"
+                "section aside"
+                "footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            grid-area: section;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 1em;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-family: 'Inconsolata', monospace;
+        }
+
+        .content {
+            overflow: hidden;
+            /* Clear  float */
+        }
+
+        .float-left {
+            float: left;
+            /* Float  image to the left */
+            margin-right: 20px;
+            /* Add some margin to separate the image from the text */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our gun's website</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="other.html"></a>Other</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>The Grand Guns </h2>
+        <div id="content">
+            <img src="rifle.jpeg"
+                height="200px" width="200px" class="float-left">
+        </div>
+        <p Welcome to the Gun House, where we cater to all your firearms needs. Established in 2000,
+         we have been serving the  community with top-quality firearms, ammunition, and accessories.
+
+        Our store boasts a wide selection of firearms from leading brands,
+         ensuring that you find the perfect fit for your needs.
+         Whether you're a seasoned hunter, a competitive shooter, or a first-time gun owner,
+         our knowledgeable staff is here to assist you every step of the way.
+         
+        In addition to our extensive inventory, we offer gunsmithing services to
+         help you maintain and customize your firearms. Our certified gunsmiths are 
+         equipped to handle everything from basic maintenance to intricate modifications,
+          ensuring that your firearm operates at its best.
+        
+        At the Gun House, safety is our top priority. That's why we offer comprehensive safety
+         training courses for all experience levels. Whether you're looking to obtain 
+         your concealed carry permit or simply improve your firearm handling skills, our courses are
+          designed to provide you with the knowledge and confidence you need to stay safe.
+        
+        Visit us at the Gun House and experience the difference quality and expertise can make.
+         Your satisfaction and safety are our top priorities, and we look forward to serving you..</p>
+    </section>
+    <aside>
+        <h3>Sidebar</h3>
+        <h4>To learn more</h4>
+        <ul>
+            <li><a href="#">45 bore</a></li>
+            <li><a href="#">Glock</a></li>
+            <li><a href="#">Snipers</a></li>
+            <li><a href="#">Shotguns</a></li>
+            <li><a href="#">Rifle</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
